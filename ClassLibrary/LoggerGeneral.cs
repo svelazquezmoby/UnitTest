@@ -10,11 +10,17 @@ namespace ClassLibrary
     {
         void Message(string message);
     }
-    public class LoggerGeneral : ILoggerGeneral
+    public class LoggerFalso : ILoggerGeneral
     {
         public void Message(string message)
         {
             Console.WriteLine(message);
+        }
+    }
+    public class LoggeFalso : ILoggerGeneral
+    {
+        public void Message(string message)
+        {
         }
     }
 }
